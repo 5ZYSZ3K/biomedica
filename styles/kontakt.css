@@ -1,0 +1,104 @@
+main {
+  text-align: center;
+  padding: 50px 15%;
+  display: flex;
+  flex-direction: row;
+  min-height: 300px;
+}
+
+main h1 {
+  margin-bottom: 30px;
+  display: inline-block;
+  color: #00a1ab;
+}
+
+main h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  top: 10px;
+  background-color: #00a1ab;
+}
+
+main div {
+  flex: 1;
+}
+
+.hours p {
+  margin-top: 30px;
+  margin-left: 50px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+main p {
+  text-align: left;
+}
+
+.address p:nth-child(2) {
+  font-size: 24px;
+}
+
+.address p:nth-child(3) {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+main a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #00a1ab;
+}
+
+.biomedica {
+  position: relative;
+  top: -50px;
+  max-height: 200px;
+}
+
+div:has(.biomedica) {
+  text-align: center;
+}
+
+footer {
+  max-width: 100vw;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  padding: 0;
+}
+
+footer img {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  main {
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .address,
+  main .hours {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    align-items: center;
+    min-height: 300px;
+    padding-top: 30px;
+  }
+  .hours p {
+    margin-left: 0;
+  }
+  footer {
+    display: none;
+  }
+}

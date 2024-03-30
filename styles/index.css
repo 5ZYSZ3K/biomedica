@@ -1,0 +1,184 @@
+.banner {
+  background-image: url("../src/background.jpg");
+  background-position: 50%, right;
+  height: 400px;
+  width: 100vw;
+}
+
+.banner .overlay {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 400px;
+  background-color: #00a1ab77;
+  width: 100vw;
+}
+
+.banner-info {
+  color: white;
+  max-width: 500px;
+  position: absolute;
+  margin-top: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.banner-info h1 {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+
+.banner-info h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  top: 10px;
+  background-color: white;
+}
+
+.banner-info.current {
+  left: 100px;
+  opacity: 1;
+}
+
+.banner-info.previous {
+  left: 600px;
+  opacity: 0;
+}
+
+.banner-info.next {
+  left: -500px;
+  opacity: 0;
+}
+
+.info-about {
+  display: flex;
+  flex-direction: row;
+  margin: 80px 5%;
+}
+
+.info-about img {
+  width: 180px;
+  height: 180px;
+  margin-top: 40px;
+}
+
+.knowledge {
+  flex: 1;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.knowledge div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.knowledge h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.knowledge h2:nth-child(2) {
+  color: #024b4f;
+  margin-left: 40px;
+}
+
+.knowledge h2:nth-child(3) {
+  color: #00a1ab;
+}
+
+.description {
+  flex: 2;
+  margin-left: 5%;
+}
+
+.description p {
+  margin-bottom: 20px;
+}
+
+.description p span {
+  font-weight: bold;
+}
+
+.issues {
+  background-color: #00a1ab;
+  padding: 80px 10%;
+}
+
+.issues h1 {
+  color: white;
+  display: inline-block;
+  padding-bottom: 30px;
+}
+
+.issues h1::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 1px;
+  top: 10px;
+  background-color: white;
+}
+
+.issues ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, max(150px, 100%/6));
+  padding: 10px;
+  gap: 40px;
+}
+
+.issues ul li {
+  display: block;
+  color: white;
+  border: 2px solid white;
+  margin: 10px;
+  height: 60px;
+  border-radius: 15px;
+  font-weight: bold;
+  align-content: center;
+  text-align: center;
+}
+
+.issues ul li:last-child {
+  border: none;
+  font-size: 28px;
+  color: #d0e384;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+@media (max-width: 900px) {
+  .issues ul {
+    gap: 10px;
+  }
+  .issues {
+    padding: 20px 0px;
+  }
+  .info-about {
+    flex-direction: column;
+    margin: 10px 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .info-about img {
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .knowledge h2 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .banner {
+    height: 300px;
+  }
+}

@@ -1,0 +1,44 @@
+.contraindications {
+  display: flex;
+  flex-direction: row;
+  padding: 70px 10%;
+}
+
+.contraindications img {
+  max-height: 300px;
+  max-width: 100%;
+  min-width: 100px;
+}
+
+.contraindications div:first-child {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contraindications h1 {
+  color: #00a1ab;
+}
+
+.contraindications .description {
+  margin-left: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contraindications p {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+@media (max-width: 900px) {
+  .contraindications {
+    flex-direction: column;
+  }
+  .contraindications .description {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
