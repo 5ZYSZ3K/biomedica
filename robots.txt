@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Host: biomedica.net.pl
+Sitemap: https://biomedica.net.pl/sitemap.xml
+

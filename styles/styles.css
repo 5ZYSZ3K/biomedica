@@ -15,16 +15,42 @@ header {
   padding: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: baseline;
+}
+
+.logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .logo {
-  width: 100px;
-  margin-left: 40px;
+  justify-content: space-between;
+  max-width: 100px;
 }
 
 .logo img {
   width: 100%;
+}
+
+.phonebtn {
+  background-color: #00000000;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #8fc1e3;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px 5px;
+}
+
+.phonebtn a {
+  text-decoration: none;
+  color: #00a0ab;
+}
+
+.phonebtn a:hover {
+  font-weight: bold;
 }
 
 nav {
@@ -82,7 +108,7 @@ nav {
 }
 
 .toggle_btn {
-  color: #31708e;
+  color: #00a0ab;
   font-size: 1.5rem;
   cursor: pointer;
   display: none;
@@ -91,15 +117,14 @@ nav {
 .dropdown_menu {
   display: none;
   position: absolute;
-  right: 2rem;
+  right: 3rem;
   top: 60px;
-  width: 300px;
+  max-width: 300px;
   height: 0;
-  background: #8fc1e3;
+  background: #00a0ab98;
   backdrop-filter: blur(15px);
   border-radius: 10px;
   overflow: hidden;
-  width: 50%;
   justify-content: center;
   flex-direction: column;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -118,7 +143,7 @@ nav {
   color: #687864;
 }
 .dropdown_menu.open {
-  height: 240px;
+  min-height: 210px;
 }
 
 main {
@@ -175,6 +200,7 @@ footer p:nth-child(3) {
   }
   .dropdown_menu {
     display: block;
+    z-index: 10;
   }
   footer {
     padding: 20px;

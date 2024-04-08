@@ -1,15 +1,30 @@
 .banner {
-  background-image: url("../src/background.jpg");
-  background-position: 50%, right;
   height: 400px;
   width: 100vw;
+}
+
+.banner.bg-1 {
+  background-image: url("../src/nikotyna.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner.bg-2 {
+  background-image: url("../src/alergia.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner.bg-3 {
+  background-image: url("../src/borelioza.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .banner .overlay {
   display: block;
   position: relative;
   overflow: hidden;
-  width: 100%;
   height: 400px;
   background-color: #00a1ab77;
   width: 100vw;
@@ -17,9 +32,7 @@
 
 .banner-info {
   color: white;
-  max-width: 500px;
   position: absolute;
-  margin-top: 50px;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -38,8 +51,14 @@
 }
 
 .banner-info.current {
-  left: 100px;
+  left: 0;
   opacity: 1;
+}
+
+.banner-info h1,
+.banner-info p {
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .banner-info.previous {
@@ -53,9 +72,9 @@
 }
 
 .info-about {
+  margin: 500px 5% 80px 5%;
   display: flex;
   flex-direction: row;
-  margin: 80px 5%;
 }
 
 .info-about img {
@@ -164,6 +183,7 @@
   .info-about {
     flex-direction: column;
     margin: 10px 20px;
+    margin-top: 400px;
   }
 }
 
@@ -171,7 +191,7 @@
   .info-about img {
     width: 80px;
     height: 80px;
-    margin-top: 20px;
+    margin-top: 300px;
     margin-bottom: 20px;
   }
   .knowledge h2 {
