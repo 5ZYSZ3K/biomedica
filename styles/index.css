@@ -4,19 +4,19 @@
 }
 
 .banner.bg-1 {
-  background-image: url("../src/nikotyna_1920.jpg");
+  background-image: url("../src/nikotyna_1920.webp");
   background-position: center;
   background-size: cover;
 }
 
 .banner.bg-2 {
-  background-image: url("../src/alergia_1920.jpg");
+  background-image: url("../src/alergia_1920.webp");
   background-position: center;
   background-size: cover;
 }
 
 .banner.bg-3 {
-  background-image: url("../src/borelioza_1920.jpg");
+  background-image: url("../src/borelioza_1920.webp");
   background-position: center;
   background-size: cover;
 }

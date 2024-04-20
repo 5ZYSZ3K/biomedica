@@ -4,10 +4,13 @@
   padding: 70px 10%;
 }
 
+.contraindications .image-wrapper {
+  flex: 1;
+}
+
 .contraindications img {
   max-height: 300px;
   max-width: 100%;
-  min-width: 100px;
 }
 
 .contraindications div:first-child {
@@ -22,10 +25,11 @@
 }
 
 .contraindications .description {
-  margin-left: 160px;
+  margin-left: 60px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: 1;
 }
 
 .contraindications p {
