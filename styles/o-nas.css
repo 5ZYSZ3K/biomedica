@@ -77,8 +77,10 @@
   justify-content: space-around;
 }
 
-.contraindications .description h1 {
+.contraindications .description h2 {
   color: #00a1ab;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .contraindications .description p:last-child {
